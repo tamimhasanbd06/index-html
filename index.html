@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Website</title>
+    <title>Beautiful Website with Animations</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -16,6 +16,21 @@
             color: white;
             text-align: center;
             padding: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+            transform: scale(1.1);
         }
         main {
             padding: 2em;
@@ -36,8 +51,14 @@
     <header>
         <h1>Welcome to Our Beautiful Website</h1>
     </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <main>
-        <p>This is a simple, clean, and beautiful design to get you started.</p>
+        <p>This is a beautiful, animated website design with smooth transitions.</p>
     </main>
     <footer>
         <p>&copy; 2026 Beautiful Website</p>
